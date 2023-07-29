@@ -1,0 +1,14 @@
+.pageNotFound {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  h3 {
+    scale: 2;
+  }
+}

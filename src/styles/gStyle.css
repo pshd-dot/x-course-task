@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato-Regular.ttf") format(truetype);
+  font-family: "LatoLight";
+  src: url("../fonts/Lato-Light.ttf") format(truetype);
+}
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #2c2f33;
+  /* overflow: hidden; */
+}
+
+/* setting header */
+header {
+  width: 100%;
+  color: #fff;
+  padding: 0.5rem;
+
+  display: flex;
+}
+.basketImage {
+  width: 50px;
+  height: 40px;
+
+  padding-right: 15px;
+}
+.basketNOutNUser {
+  width: 48%;
+
+  display: flex;
+  justify-content: center;
+}
+.brand {
+  width: 50%;
+}
+.usernameHeader {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.signoutB {
+  z-index: 3;
+
+  background-color: #7289da;
+  border: 5px solid #7289da;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+  transition: 1250ms;
+}
+.signoutB:hover {
+  background-color: #4d67c7;
+  border: 5px solid #4d67c7;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+  transition: 1250ms;
+}
+/* end of setting header */
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+footer {
+  position: relative;
+  bottom: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+}
+
+h1,
+h3,
+p {
+  color: #ffffff;
+  font-family: "LatoRegular", sans-serif;
+}
+/* start setting sign in form */
+.context {
+  align-items: center;
+  margin-top: 10%;
+  background-color: rgb(32, 34, 37);
+  border: 2px rgb(44, 47, 51) solid;
+  border-radius: 5px;
+  scale: 1.2;
+  width: 35%;
+  height: 150%;
+}
+
+.title {
+  text-align: center;
+  font-family: "LatoRegular", sans-serif;
+  margin-top: 5px;
+}
+
+.signin-div {
+  display: inline-block;
+  text-align: start;
+  margin-top: 20px;
+  font-family: "LatoRegular", sans-serif;
+}
+
+.globalForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-input {
+  margin-top: 10px;
+}
+
+#username {
+  border: #cccccc 2px solid;
+  border-radius: 3px;
+  background-color: #cccccc;
+  transition: 500ms;
+  outline: none;
+  width: 200px;
+}
+#username:hover:focus {
+  background-color: white;
+  border-color: #e6e6e6;
+  outline: none;
+}
+
+.signinB {
+  background-color: #7289da;
+  border: 5px solid #7289da;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+  transition: 1250ms;
+  width: 210px;
+}
+.signinB:hover {
+  background-color: #9aabe5;
+  border-color: #9aabe5;
+}
+.signinB:disabled {
+  opacity: 0.5;
+}
+
+.userImg {
+  display: block;
+  margin: 0 auto;
+}
+/* end of setting sign in form */
+
+/* start of setting empty basket.jsx */
+
+.basket {
+  height: 100px;
+}
+.basketImage {
+  display: flex;
+}
+.basketImageDiv {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+
+.mainBasketImage {
+  opacity: 0.3;
+}
+
+/* end of setting empty basket.jsx */
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  h1 {
+    font-size: larger;
+  }
+  .context {
+    width: 80%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .globalForm {
+    width: 100%;
+  }
+  .signinB {
+    width: 105%;
+  }
+  #username {
+    width: 100%;
+  }
+  .userImg {
+    width: 200px;
+  }
+  .signoutB {
+    scale: 0.5;
+    margin-left: 0;
+  }
+
+  .basketImage {
+    scale: 0.5;
+    padding-right: 0;
+  }
+  .basketNOutNUser {
+    justify-content: start;
+  }
+  .usernameHeader {
+    scale: 2.5;
+    padding-left: 0;
+  }
+}

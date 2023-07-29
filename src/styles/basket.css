@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+.cart {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filmInfo {
+  width: 30%;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.filmAnotherInfo {
+  width: 70%;
+
+  display: flex;
+
+  justify-content: end;
+  align-items: center;
+}
+
+.deleteButton {
+  background-color: #7289da;
+  border: 5px solid #7289da;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+  transition: 1250ms;
+}
+.deleteButton:hover {
+  background-color: #4d67c7;
+  border: 5px solid #4d67c7;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+  transition: 1250ms;
+}
