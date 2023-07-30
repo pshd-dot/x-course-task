@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/sign-in/static/css/main.30ea17ee.css",
-    "main.js": "/sign-in/static/js/main.db6e1447.js",
-    "static/media/spiderman.jpg": "/sign-in/static/media/spiderman.b9119d4b3fd9d045e88e.jpg",
-    "static/media/fastNFurious9.jpg": "/sign-in/static/media/fastNFurious9.dee4641b015cbc1c6627.jpg",
-    "static/media/harrypotter.jpg": "/sign-in/static/media/harrypotter.5316c426c042b897659e.jpg",
-    "static/media/panda.jpg": "/sign-in/static/media/panda.f8d5db39f29c95e3de75.jpg",
-    "static/media/spiderman_title.png": "/sign-in/static/media/spiderman_title.723386ca1b5b20aa87fa.png",
-    "static/media/harrypotter_title.jpg": "/sign-in/static/media/harrypotter_title.6afa6c5919c92e2dbfae.jpg",
-    "static/media/Lato-Light.ttf": "/sign-in/static/media/Lato-Light.e7e57d2f1333e178db96.ttf",
-    "static/media/Lato-Regular.ttf": "/sign-in/static/media/Lato-Regular.633ffe4a4b5b7277cc35.ttf",
-    "static/media/user.png": "/sign-in/static/media/user.624c8714cc87480f3c67.png",
-    "static/media/fastNFurious9_title.jpg": "/sign-in/static/media/fastNFurious9_title.623e3f574f9ae6bf0f66.jpg",
-    "static/media/basket.png": "/sign-in/static/media/basket.0b51be8d0b88349419af.png",
-    "static/media/panda_title.png": "/sign-in/static/media/panda_title.a9d81730a0822f2325aa.png",
-    "index.html": "/sign-in/index.html",
-    "main.30ea17ee.css.map": "/sign-in/static/css/main.30ea17ee.css.map",
-    "main.db6e1447.js.map": "/sign-in/static/js/main.db6e1447.js.map"
+    "main.css": "/static/css/main.8c1b523b.css",
+    "main.js": "/static/js/main.be861312.js",
+    "static/media/spiderman.jpg": "/static/media/spiderman.b9119d4b3fd9d045e88e.jpg",
+    "static/media/fastNFurious9.jpg": "/static/media/fastNFurious9.dee4641b015cbc1c6627.jpg",
+    "static/media/harrypotter.jpg": "/static/media/harrypotter.5316c426c042b897659e.jpg",
+    "static/media/panda.jpg": "/static/media/panda.f8d5db39f29c95e3de75.jpg",
+    "static/media/spiderman_title.png": "/static/media/spiderman_title.723386ca1b5b20aa87fa.png",
+    "static/media/harrypotter_title.jpg": "/static/media/harrypotter_title.6afa6c5919c92e2dbfae.jpg",
+    "static/media/Lato-Light.ttf": "/static/media/Lato-Light.e7e57d2f1333e178db96.ttf",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.633ffe4a4b5b7277cc35.ttf",
+    "static/media/user.png": "/static/media/user.624c8714cc87480f3c67.png",
+    "static/media/fastNFurious9_title.jpg": "/static/media/fastNFurious9_title.623e3f574f9ae6bf0f66.jpg",
+    "static/media/basket.png": "/static/media/basket.0b51be8d0b88349419af.png",
+    "static/media/panda_title.png": "/static/media/panda_title.a9d81730a0822f2325aa.png",
+    "index.html": "/index.html",
+    "main.8c1b523b.css.map": "/static/css/main.8c1b523b.css.map",
+    "main.be861312.js.map": "/static/js/main.be861312.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ea17ee.css",
-    "static/js/main.db6e1447.js"
+    "static/css/main.8c1b523b.css",
+    "static/js/main.be861312.js"
   ]
 }
