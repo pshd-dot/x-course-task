@@ -3,30 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { UsernameContext } from "./UserNameContext";
 import "../styles/specificFilm.css";
 
-import harryPotterImage from "./generalImages/harrypotter.jpg";
-import spidermanImage from "./generalImages/spiderman.jpg";
-import pandaImage from "./generalImages/panda.jpg";
-import fastNFuriousImage from "./generalImages/fastNFurious9.jpg";
-
-import harryPotterImageTitle from "./generalImages/harrypotter_title.jpg";
-import spidermanImageTitle from "./generalImages/spiderman_title.png";
-import pandaImageTitle from "./generalImages/panda_title.png";
-import fastNFurious9ImageTitle from "./generalImages/fastNFurious9_title.jpg";
-
-const imageMapping = {
-  "./generalImages/harrypotter.jpg": harryPotterImage,
-  "./generalImages/spiderman.jpg": spidermanImage,
-  "./generalImages/panda.jpg": pandaImage,
-  "./generalImages/fastNFurious9.jpg": fastNFuriousImage,
-};
-
-const imageTitleMapping = {
-  "./generalImages/harrypotter_title.jpg": harryPotterImageTitle,
-  "./generalImages/spiderman_title.png": spidermanImageTitle,
-  "./generalImages/panda_title.png": pandaImageTitle,
-  "./generalImages/fastNFurious9_title.jpg": fastNFurious9ImageTitle,
-};
-
 const SpecificFilm = () => {
   const {
     isAuthenticated,
@@ -42,12 +18,6 @@ const SpecificFilm = () => {
   const { filmId } = useParams();
 
   const selectedFilm = films.find((film) => film.id === Number(filmId));
-
-  // const imageSource = imageMapping[selectedFilm.imagePoster];
-  const imageSource = selectedFilm ? imageMapping[selectedFilm.image] : null;
-  const imageTitleSource = selectedFilm
-    ? imageTitleMapping[selectedFilm.imageTitle]
-    : null;
 
   if (!isAuthenticated) {
     return (
@@ -85,13 +55,13 @@ const SpecificFilm = () => {
         <main>
           <div className="imageOpacity">
             <img
-              src={imageSource}
+              src={selectedFilm.image}
               alt="Film Image"
               className="image"
               width="100%"
             />
             <img
-              src={imageTitleSource}
+              src={selectedFilm.imageTitle}
               className="overlay-imgTitle"
               style={{ width: "350px" }}
             />
