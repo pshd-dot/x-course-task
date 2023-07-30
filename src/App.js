@@ -1,30 +1,34 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
 
 import Basket from "./pages/Basket";
 import FilmList from "./pages/FilmList";
 import SpecificFilm from "./pages/SpecificFilm";
-import Layout from "./components/Layout";
 import Pagenotfound from "./pages/Pagenotfound";
 import Signin from "./pages/Signin";
-import { UsernameProvider } from "./pages/UserNameContext";
+import { PrivateRoutes } from "./utils/PrivetRoute";
+import Header from "./components/Header"
 
 function App() {
   return (
-    <UsernameProvider>
+		<>
+		<Header />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Signin />} />
-          <Route path="filmlist" element={<FilmList />} />
-          <Route path="basket" element={<Basket />} />
-          <Route
-            path="filmlist/specificfilm/:filmId"
-            element={<SpecificFilm />}
-          />
-          <Route path="*" element={<Pagenotfound />} />
+        <Route element={<PrivateRoutes />}>
+          <Route path='/' element={<Navigate to='/filmlist' replace />} />
+
+          <Route path='/filmlist'>
+            <Route index element={<FilmList />} />
+            <Route path=':filmId' element={<SpecificFilm />} />
+          </Route>
+
+          <Route path='basket' element={<Basket />} />
+					
+          <Route path='*' element={<Pagenotfound />} />
         </Route>
+        <Route path='/signin' element={<Signin />} />
       </Routes>
-    </UsernameProvider>
+			</>
   );
 }
 

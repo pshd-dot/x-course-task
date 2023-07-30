@@ -1,14 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom"; // Исправлено: добавлен правильный импорт
-import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client"; // Исправлено: добавлен правильный импорт
+import { HashRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import { UsernameProvider } from "./pages/UserNameContext";
 
-const root = document.getElementById("root");
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  root
+root.render(
+  <HashRouter>
+    <UsernameProvider>
+      <App />
+    </UsernameProvider>
+  </HashRouter>
 );

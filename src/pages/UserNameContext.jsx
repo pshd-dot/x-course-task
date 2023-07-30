@@ -1,10 +1,12 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useCallback } from "react";
 import Cookies from "js-cookie";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const UsernameContext = createContext();
+const BASE_URL = "https://books-ciklum-default-rtdb.firebaseio.com/films.json";
 
 const UsernameProvider = ({ children }) => {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(localStorage.getItem("username"));
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [cartItems, setCartItems] = useState({});
   const [error, setError] = useState(null);
@@ -13,25 +15,27 @@ const UsernameProvider = ({ children }) => {
   const [filmCount, setFilmCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  const fetchData = () => {
-    fetch("/films.json")
-      .then(
-        (res) => res.json()
-        // console.log(res);
-      )
-      .then((result) => {
-        setIsLoaded(true);
-        setFilms(result.films);
-        // console.log(result);
-      })
-      .catch((error) => {
-        setError(error);
-        setIsLoaded(true);
-      });
-  };
-  useEffect(() => {
-    fetchData();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const fetchData = useCallback(async () => {
+    try {
+      setIsLoaded(true);
+      const response = await fetch(BASE_URL);
+      const data = await response.json();
+      setFilms(data);
+    } catch (error) {
+      setError(error);
+      console.log(error.message);
+      setIsLoaded(true);
+    }
   }, []);
+
+  useEffect(() => {
+    if (username && location.pathname === "/signin") {
+      navigate("/filmlist");
+    }
+  }, [username, location, navigate]);
 
   useEffect(() => {
     // При первом рендере, проверяем наличие информации об аутентификации в localStorage
@@ -48,7 +52,13 @@ const UsernameProvider = ({ children }) => {
     if (storedCartItems) {
       setCartItems(JSON.parse(storedCartItems));
     }
-  }, []);
+    fetchData();
+  }, [fetchData]);
+
+  useEffect(() => {
+    // При зміні стану isAuthenticated зберігаємо його в localStorage
+    localStorage.setItem("authentication", isAuthenticated);
+  }, [isAuthenticated]);
 
   useEffect(() => {
     Cookies.set("cartItems", JSON.stringify(cartItems));
@@ -153,6 +163,7 @@ const UsernameProvider = ({ children }) => {
         handleFilmCount,
         totalPrice,
         setTotalPrice,
+        fetchData,
       }}
     >
       {children}

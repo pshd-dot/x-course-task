@@ -20,7 +20,7 @@ const Header = () => {
           <img src={basketImage} alt="Basket" className="basketImage" />
         </Link>
         <div>
-          <Link to="/">
+          <Link to="/signin">
             <button
               style={{ height: "100%" }}
               className="signoutB"
