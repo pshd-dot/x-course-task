@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/x-course-task/static/css/main.2edba064.css",
-    "main.js": "/x-course-task/static/js/main.1ed66f3f.js",
+    "main.css": "/x-course-task/static/css/main.5b4413d0.css",
+    "main.js": "/x-course-task/static/js/main.08c40937.js",
     "static/media/spiderman.jpg": "/x-course-task/static/media/spiderman.b9119d4b3fd9d045e88e.jpg",
     "static/media/fastNFurious9.jpg": "/x-course-task/static/media/fastNFurious9.dee4641b015cbc1c6627.jpg",
     "static/media/harrypotter.jpg": "/x-course-task/static/media/harrypotter.5316c426c042b897659e.jpg",
@@ -15,11 +15,11 @@
     "static/media/basket.png": "/x-course-task/static/media/basket.0b51be8d0b88349419af.png",
     "static/media/panda_title.png": "/x-course-task/static/media/panda_title.a9d81730a0822f2325aa.png",
     "index.html": "/x-course-task/index.html",
-    "main.2edba064.css.map": "/x-course-task/static/css/main.2edba064.css.map",
-    "main.1ed66f3f.js.map": "/x-course-task/static/js/main.1ed66f3f.js.map"
+    "main.5b4413d0.css.map": "/x-course-task/static/css/main.5b4413d0.css.map",
+    "main.08c40937.js.map": "/x-course-task/static/js/main.08c40937.js.map"
   },
   "entrypoints": [
-    "static/css/main.2edba064.css",
-    "static/js/main.1ed66f3f.js"
+    "static/css/main.5b4413d0.css",
+    "static/js/main.08c40937.js"
   ]
 }
