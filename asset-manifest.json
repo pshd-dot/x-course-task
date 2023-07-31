@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/x-course-task/static/css/main.f7aa5d5f.css",
-    "main.js": "/x-course-task/static/js/main.f55e8c3c.js",
+    "main.css": "/x-course-task/static/css/main.d1fba422.css",
+    "main.js": "/x-course-task/static/js/main.6072ca58.js",
     "static/media/Lato-Light.ttf": "/x-course-task/static/media/Lato-Light.e7e57d2f1333e178db96.ttf",
     "static/media/Lato-Regular.ttf": "/x-course-task/static/media/Lato-Regular.633ffe4a4b5b7277cc35.ttf",
     "static/media/user.png": "/x-course-task/static/media/user.624c8714cc87480f3c67.png",
     "static/media/basket.png": "/x-course-task/static/media/basket.0b51be8d0b88349419af.png",
     "index.html": "/x-course-task/index.html",
-    "main.f7aa5d5f.css.map": "/x-course-task/static/css/main.f7aa5d5f.css.map",
-    "main.f55e8c3c.js.map": "/x-course-task/static/js/main.f55e8c3c.js.map"
+    "main.d1fba422.css.map": "/x-course-task/static/css/main.d1fba422.css.map",
+    "main.6072ca58.js.map": "/x-course-task/static/js/main.6072ca58.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7aa5d5f.css",
-    "static/js/main.f55e8c3c.js"
+    "static/css/main.d1fba422.css",
+    "static/js/main.6072ca58.js"
   ]
 }
