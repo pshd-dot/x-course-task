@@ -9,6 +9,18 @@
 
 @media screen and (min-width: 320px) and (orientation: portrait) {
   h3 {
-    scale: 2;
+    font-size: xx-large;
+  }
+  .textStopper {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+  h3 {
+    font-size: 450%;
+  }
+  .textStopper {
+    width: 600px;
   }
 }

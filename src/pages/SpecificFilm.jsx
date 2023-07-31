@@ -45,7 +45,7 @@ const SpecificFilm = () => {
         }}
       >
         <p>
-          <b>Film not found</b>
+          <b className="filmnotfound">Film not found</b>
         </p>
       </div>
     );
@@ -66,10 +66,10 @@ const SpecificFilm = () => {
               style={{ width: "350px" }}
             />
             <div className="overlay-title">
-              <h3>{selectedFilm.title}</h3>
+              <h2>{selectedFilm.title}</h2>
             </div>
             <div className="overlay-mainDescription">
-              <h4>
+              <h4 id="overlay-mainDescription">
                 {selectedFilm.year} | {selectedFilm.age} |{" "}
                 {selectedFilm.duration}
               </h4>

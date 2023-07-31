@@ -134,14 +134,21 @@ h3.text {
   }
   .searchedInputDiv {
     scale: 0.5;
-    left: 64.5%;
+    left: 53%;
+  }
+  .searchedInput {
+    width: 120%;
+
+    font-size: xx-large;
+  }
+  #priceFilter {
+    width: 125%;
+    /* font-size: xx-large; */
   }
   .viewButton {
-    left: 45%;
+    left: 25%;
   }
-  #priceText {
-    margin-left: 20px;
-  }
+
   .film {
     margin-right: 10px;
   }
@@ -156,24 +163,22 @@ h3.text {
     position: relative;
     z-index: 3;
 
-    left: 58%;
+    left: 57%;
     top: 8px;
 
     height: 40px;
-    width: 90%;
+    width: 40%;
   }
   .searchedInput,
   #priceFilter {
-    scale: 0.9;
+    scale: 0.8;
   }
   .film {
     margin-right: 10px;
   }
-  #priceText {
-    margin-left: 10px;
-  }
+
   .viewButton {
-    left: 54%;
+    left: 30%;
   }
 }
 @media screen and (min-width: 601px) and (orientation: portrait) {
