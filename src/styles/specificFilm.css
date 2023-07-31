@@ -125,7 +125,7 @@ section {
   left: 20%;
   transform: translate(-50%, -50%);
 
-  color: #ffffff;
+  color: white;
   font-family: "LatoRegular", sans-serif;
 
   z-index: 2;
@@ -172,6 +172,10 @@ section {
   background-color: #7289da;
   border: 5px #7289da solid;
   border-radius: 5px;
+}
+.addToCart:active {
+  background-color: #9aabe5;
+  border-color: #9aabe5;
 }
 
 .f_count > select {

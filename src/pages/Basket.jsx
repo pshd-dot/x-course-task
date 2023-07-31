@@ -56,8 +56,13 @@ const Basket = () => {
   return (
     <div className="cart">
       {cartIsEmpty ? (
-        <div>
+        <div style={{ display: "inline-block" }}>
           <h2 style={{ color: "white " }}>Cart is empty</h2>
+          <Link to="/filmlist">
+            <button className="deleteButton" style={{ margin: "auto" }}>
+              Buy films
+            </button>
+          </Link>
         </div>
       ) : (
         <div className="items-container">
@@ -85,7 +90,14 @@ const Basket = () => {
               </div>
             </div>
           ))}
-          <p>Total price: {roundedTotalPrice}$</p>
+
+          <div className="totalPriceNBToFilms">
+            {" "}
+            <Link to="/filmlist">
+              <button className="deleteButton">Buy more</button>
+            </Link>
+            <p>Total price: {roundedTotalPrice}$</p>
+          </div>
         </div>
       )}
     </div>

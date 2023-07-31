@@ -221,3 +221,92 @@ p {
     padding-left: 0;
   }
 }
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  h1 {
+    font-size: larger;
+  }
+  .context {
+    width: 80%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .globalForm {
+    width: 100%;
+  }
+  .signinB {
+    width: 105%;
+  }
+  #username {
+    width: 100%;
+  }
+  .userImg {
+    width: 200px;
+  }
+  .signoutB {
+    scale: 0.7;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .basketImage {
+    scale: 0.7;
+    padding-right: 0;
+  }
+  .basketNOutNUser {
+    justify-content: start;
+  }
+  .usernameHeader {
+    padding-left: 0;
+    font-size: xx-small;
+    align-items: center;
+  }
+  .brand {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 400px) and (orientation: portrait) {
+  .brand {
+    width: 30%;
+  }
+  .basketImage {
+    scale: 0.7;
+    padding-right: 0;
+  }
+  .signoutB {
+    scale: 0.7;
+  }
+  .usernameHeader {
+    margin-left: 5px;
+  }
+  .basketNOutNUser {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 601px) and (orientation: portrait) {
+  h1 {
+    font-size: xx-large;
+  }
+  .brand {
+    width: 40%;
+  }
+  .basketImage {
+    scale: 1.5;
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  .signoutB {
+    scale: 1.2;
+    margin-right: 20px;
+  }
+  .usernameHeader {
+    margin-left: 5px;
+    font-size: larger;
+  }
+  .basketNOutNUser {
+    display: flex;
+    justify-content: start;
+  }
+}

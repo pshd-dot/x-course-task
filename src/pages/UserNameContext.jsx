@@ -78,6 +78,8 @@ const UsernameProvider = ({ children }) => {
     setIsAuthenticated(false);
     localStorage.removeItem("username"); // Используем removeItem для удаления ключа из localStorage
     localStorage.setItem("authentication", "false");
+    Cookies.remove("cartItems", "0");
+    console.log("removed films data");
   };
 
   const updateTotalPrice = () => {
@@ -116,31 +118,27 @@ const UsernameProvider = ({ children }) => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const removeFromCart = (filmId) => {
+  const removeFromCart = (filmId, filmTitle) => {
     setCartItems((prevCartItems) => {
       const updatedCartItems = { ...prevCartItems };
 
       // Находим фильм в корзине по его id
-      const filmToRemoveKey = Object.keys(updatedCartItems).find(
-        (filmTitle) => updatedCartItems[filmTitle].id === filmId
-      );
+      const filmToRemove = updatedCartItems[filmTitle];
 
-      if (filmToRemoveKey) {
+      if (filmToRemove) {
         // Уменьшаем количество данного фильма на 1
-        updatedCartItems[filmToRemoveKey].quantity -= 1;
+        filmToRemove.quantity -= 1;
 
         // Если количество стало равно 0, удаляем фильм из корзины
-        if (updatedCartItems[filmToRemoveKey].quantity <= 0) {
-          delete updatedCartItems[filmToRemoveKey];
+        if (filmToRemove.quantity <= 0) {
+          delete updatedCartItems[filmTitle];
         }
       }
-      updateTotalPrice();
-      // Сохранение состояния корзины в localStorage
-      localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
 
       return updatedCartItems;
     });
   };
+
   const handleFilmCount = (event) => {
     setFilmCount(() => event.target.value);
   };
