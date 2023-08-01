@@ -56,9 +56,12 @@ const Basket = () => {
   return (
     <div className="cart">
       {cartIsEmpty ? (
-        <div style={{ display: "inline-block" }}>
-          <h2 style={{ color: "white " }}>Cart is empty</h2>
+        <div style={{ display: "inline" }}>
+          <h2 className="h2" style={{ color: "white " }}>
+            Cart is empty
+          </h2>
           <Link to="/filmlist">
+            <div className="deleteButtonDiv"></div>
             <button className="deleteButton" style={{ margin: "auto" }}>
               Buy films
             </button>

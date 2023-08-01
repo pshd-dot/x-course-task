@@ -278,6 +278,9 @@ p {
 }
 
 @media screen and (min-width: 901px) and (orientation: portrait) {
+  .brand {
+    font-size: x-large;
+  }
   .basketImage {
     scale: 1.4;
     margin-right: 25px;
