@@ -184,25 +184,28 @@ section {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 399px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (orientation: portrait) {
   .overlay-imgTitle {
-    scale: 0.4;
-    left: 0;
-    top: 25%;
+    scale: 0.35;
+    left: -10%;
+    top: 22%;
   }
   .overlay-title {
-    left: 55%;
-    width: 100%;
+    left: 32%;
+    top: 55%;
+    font-size: x-small;
   }
   .overlay-mainDescription {
-    left: 35%;
+    left: 25%;
+    top: 62%;
   }
   .overlay-description {
-    left: 40%;
+    left: 35%;
     width: 65%;
+    font-size: xx-small;
   }
   .mainActors {
-    left: 30%;
+    left: 26%;
   }
 
   h3,
@@ -218,7 +221,7 @@ section {
     font-size: xx-large;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 600pxx) and (orientation: portrait) {
+@media screen and (min-width: 400px) and (orientation: portrait) {
   .overlay-imgTitle {
     scale: 0.4;
     left: 0;
