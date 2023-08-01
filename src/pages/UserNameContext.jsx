@@ -3,7 +3,8 @@ import Cookies from "js-cookie";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const UsernameContext = createContext();
-const BASE_URL = "https://books-ciklum-default-rtdb.firebaseio.com/films.json";
+const BASE_URL =
+  "https://x-course-task-default-rtdb.europe-west1.firebasedatabase.app/films.json";
 
 const UsernameProvider = ({ children }) => {
   const [username, setUsername] = useState(localStorage.getItem("username"));

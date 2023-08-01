@@ -221,4 +221,13 @@ h3.text {
   #filmTitle {
     font-size: xx-large;
   }
+  .searchedInputDiv {
+    left: 75%;
+  }
+  .searchedInput {
+    width: 150%;
+  }
+  #priceFilter {
+    width: 150%;
+  }
 }

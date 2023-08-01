@@ -256,7 +256,7 @@ section {
   }
 }
 
-@media screen and (min-width: 601px) and (orientation: portrait) {
+@media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
   .overlay-imgTitle {
     scale: 0.8;
     left: 15%;
@@ -287,5 +287,37 @@ section {
   }
   .filmnotfound {
     font-size: xx-large;
+  }
+}
+
+@media screen and (min-width: 901px) and (orientation: portrait) {
+  h3,
+  h4,
+  p {
+    font-size: 85%;
+  }
+  .overlay-imgTitle {
+    scale: 1.2;
+    left: 25%;
+    top: 30%;
+  }
+  .overlay-title {
+    font-size: xx-large;
+    top: 45%;
+  }
+  .overlay-mainDescription {
+    top: 55%;
+  }
+
+  #overlay-mainDescription {
+    font-size: x-large;
+  }
+  .overlay-description {
+    font-size: x-large;
+  }
+  .mainActors {
+    top: 95%;
+    left: 28%;
+    font-size: x-large;
   }
 }

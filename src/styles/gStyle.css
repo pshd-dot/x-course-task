@@ -247,7 +247,7 @@ p {
   }
 }
 
-@media screen and (min-width: 601px) and (orientation: portrait) {
+@media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
   h1 {
     font-size: xx-large;
   }
@@ -274,5 +274,19 @@ p {
   h4,
   p {
     font-size: small;
+  }
+}
+
+@media screen and (min-width: 901px) and (orientation: portrait) {
+  .basketImage {
+    scale: 1.4;
+    margin-right: 25px;
+  }
+  .signoutB {
+    scale: 1.2;
+  }
+  .usernameHeader {
+    margin-left: 20px;
+    font-size: xxx-large;
   }
 }
